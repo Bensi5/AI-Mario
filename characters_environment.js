@@ -381,7 +381,7 @@ function die(character) {
   character.status = "dead";
   character.changeAnimation('dead');
   character.velocity.y -= 2;
-  if(character.liveNumber>0){
+  if (character.liveNumber > 0) {
     Mdie.play();
   }
 }
@@ -395,7 +395,7 @@ function checkStatus(character) {
   }
   if (character.live == false && character.liveNumber == 0) {
     gameConfig.status = "gameover";
-    gameover.play();
+    Mgameover.play();
   }
 
 }
